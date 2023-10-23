@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Separación de items en nav */
+.nav-item {
+    margin: 0 40px 0 40px;
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+        margin: 0;
+    }
+}
+
+/* ESTILOS PARA EL DROPDOWN */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li ul.dropdown li {
+    display: block;
+
+}
+
+ul li ul.dropdown {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    left: 50%;
+    transform: translate(-50%, 8%);
+}
+
+.custom-dropdown li {
+    padding: 1rem 0 1rem 1rem;
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+/* Pantallas xs, aumenta el ancho del dropdown */
+@media (max-width: 576px) {
+    ul li ul.dropdown {
+        background-color: rgb(255, 255, 255);
+        width: 95%;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        left: 50%;
+        transform: translate(-50%, 8%);
+    
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-row {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+    }
+}
+
+/* Estilos al menu Opciones */
+.opciones-custom a {
+    padding: 1rem 0 1rem 1rem;
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+}
+
+/*MODIFICO EL SLIDER*/
+.container-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem; 
+  }
